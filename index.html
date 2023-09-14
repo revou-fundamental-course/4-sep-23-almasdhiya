@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="javascript/javascript.js"></script>
+  <title>Kalkulator Hitung Persegi</title>
+</head>
+
+<body>
+  <header>
+    <h1>Kalkulator Hitung Persegi</h1>
+  </header>
+  <section class="awal">
+    <h4>Website ini dibuat untuk membantu anda menghitung luas dan keliling persegi</h4>
+  </section>
+
+  <div class="tab">
+    <button class="tablinks active" onclick="openCount(event, 'Luas')">Luas</button>
+    <button class="tablinks" onclick="openCount(event, 'Keliling')">Keliling</button>
+  </div>
+
+    <div id="Luas" class="tabcontent" style="display: block;">
+      <img src="img/persegi.jpg">
+      <p>Rumus Luas Persegi yaitu: </p>
+      <h3>L = S X S</h3>
+      <p>L = Luas</p>
+      <p>S = Sisi</p>
+
+      <hr>
+      <div class="luaspersegi">
+        <label for="inputfield"> Sisi Persegi </label>
+        <input type="number" id="input-luas" placeholder="Masukan Angka Sisi Persegi" autocomplete="off">
+      </div>
+      <div class="buttonluas">
+        <button type="submit" id="hitung" onclick="hitungLuas()"> Hitung </button>
+        <button type="reset" id="reset" onclick="reset()"> Reset </button>
+      </div>
+
+      <div id="hasil-luas"></div>
+    </div>
+
+    <div id="Keliling" class="tabcontent">
+      <img src="img/persegi.jpg">
+      <p>Rumus Keliling Persegi yaitu: </p>
+      <h3>K = 4 X S</h3>
+      <p>K = Keliling</p>
+      <p>S = Sisi</p>
+
+      <hr>
+
+      <div class="luaspersegi">
+        <label for="inputfield"> Sisi Persegi </label>
+        <input type="number" id="input-keliling" placeholder="Masukan Angka Sisi Persegi" autocomplete="off">
+      </div>
+      <div class="buttonluas">
+        <button type="submit" id="hitung" onclick="hitungKeliling()"> Hitung </button>
+        <button type="reset" id="reset" onclick="reset()"> Reset </button>
+      </div>
+      <div id="hasil-keliling"></div>
+    </div>
+
+</body>
+
+</html>

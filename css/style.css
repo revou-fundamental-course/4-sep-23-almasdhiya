@@ -1,0 +1,116 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+header {
+    background-color: #1A4D2E;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.awal {
+    display: flex;
+    justify-content: center;
+}
+
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #379237;
+  }
+  
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px;
+    width: 50%;
+    transition: 0.3s;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .tab button:hover {
+    background-color: #1A4D2E;
+  }
+  
+  .tab button.active {
+    background-color: #1A4D2E;
+  }
+  
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+  }
+
+  img {
+    width: 110px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  h3 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .luaspersegi {
+    display: flex;
+    flex-direction: column;
+  }
+
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 7px;
+    font-size: 20px;
+  }
+
+  input {
+    padding: 10px;
+    border-radius: 6px;
+    border: 3px solid #9EB23B;
+    outline: none;
+  }
+
+  input:focus {
+    border-color: #1A4D2E;
+  }
+
+  .buttonluas {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #hitung {
+    padding: 10px 10px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #379237;
+    color: white;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-left: auto;
+  }
+
+  #reset {
+    padding: 10px 16px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-left: 10px;
+  }
+
+  button:hover {
+    background-color: #1A4D2E;
+  }
